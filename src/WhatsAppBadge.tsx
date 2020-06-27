@@ -1,10 +1,13 @@
 import React from "react"
 
-function App() {
-  const phoneNumber = 0
+type props = {
+  phoneNumber: string
+}
+
+function WhatsAppBadge({ phoneNumber }: props) {
   const url = `https://wa.me/${phoneNumber}`
   return (
-    <div className="App">
+    <div>
       <a href={url}>
         <svg
           style={styles}
@@ -30,8 +33,8 @@ const styles: React.CSSProperties = {
   position: "fixed",
   bottom: 0,
   right: 0,
-  margin: "15px",
-  boxShadow: "0px 0px 6px -1px rgba(0, 0, 0, 0.49)",
+  margin: "25px",
+  boxShadow: "0px 0px 3px 0px rgba(0, 0, 0, 0.49)",
 }
 
-export default App
+export default WhatsAppBadge
