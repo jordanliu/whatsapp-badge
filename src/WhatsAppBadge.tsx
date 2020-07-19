@@ -2,6 +2,8 @@ import React from "react"
 
 type props = {
   phoneNumber: string
+  height?: number
+  width?: number
 }
 
 function WhatsAppBadge({ phoneNumber }: props) {
